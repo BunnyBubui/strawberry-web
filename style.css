@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Itim", cursive;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: end;
+    background: #e0aabf;
+}
+
+.container-warp {
+    border-radius: 20px 0px 0px 20px;
+    background: url("https://i.pinimg.com/1200x/09/55/1e/09551e961ee09c864a747503b4b08f14.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 40px 0px 40px 40px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    max-width: 1340px;
+    flex-direction: column;
+    height: 100%;
+    padding: 0px 40px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left i {
+    margin-right: 10px;
+    scale: 1.5;
+    color: #e03d63;
+}
+
+.nav-left h1 {
+    font-size: 20px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-right button {
+    background: none;
+    border: none;
+    color: #e03d63;
+    font-weight: 600;
+    transition: all 0.3s;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.nav-right button:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.nav-right .nav-action button {
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.nav-right .nav-action {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-right .nav-action .nav-login {
+    background: #ffffff;
+    color: #e03d63;
+    border: 1px solid #e03d63;
+}
+
+.nav-right .nav-action .nav-login:hover {
+    background: #fb5c81;
+    color: #ffffff;
+    border: 1px solid #e03d63;
+}
+
+.nav-right .nav-action .nav-signup {
+    color: #ffffff;
+    background: #e03d63;
+}
+
+
+.nav-right .nav-action .nav-signup:hover {
+    color: #ffffff;
+    background: #fb5c81;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.info-yummy {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 1000px;
+    gap: 20px;
+}
+
+.info-yummy .btn-explore {
+    display: flex;
+    padding: 10px 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #e03d63;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.info-yummy .btn-explore:hover {
+    background: #fb5c81;
+}
+
+
+
+.info-yummy .btn-explore i {
+    scale: 1.1;
+    margin-left: 10px;
+}
