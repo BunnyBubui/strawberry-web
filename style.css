@@ -21,6 +21,7 @@
     padding: 20px;
     margin: 40px 0px 40px 40px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
 }
 
 .content {
@@ -37,6 +38,8 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .nav-left {
@@ -57,6 +60,7 @@
 .nav-right {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .nav-right button {
@@ -86,6 +90,29 @@
     gap: 10px;
 }
 
+@media (max-width: 730px) {
+    .nav-right .nav-action {
+        width: 100%;
+        justify-content: baseline;
+    }
+
+    .nav-right {
+        align-items: baseline;
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .container-warp {
+        margin: 0px;
+        border-radius: 0;
+        padding: 20px 0px;
+    }
+}
+
 .nav-right .nav-action .nav-login {
     background: #ffffff;
     color: #e03d63;
@@ -111,7 +138,6 @@
 
 .info {
     display: flex;
-    justify-content: center;
     height: 100%;
 }
 
@@ -119,8 +145,9 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-right: 1000px;
     gap: 20px;
+    width: 100%;
+    max-width: 300px;
 }
 
 .info-yummy .btn-explore {
@@ -141,8 +168,6 @@
 .info-yummy .btn-explore:hover {
     background: #fb5c81;
 }
-
-
 
 .info-yummy .btn-explore i {
     scale: 1.1;
